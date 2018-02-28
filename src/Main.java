@@ -3,5 +3,6 @@ public class Main {
         // Prints "Hello, World" in the terminal window.
         System.out.println("Hello World !!!");
         System.out.println("Name this project is LuNaNeMe");
+        System.out.println(Klasa_Testowa.dodawanie(2,3));
     }
 }
