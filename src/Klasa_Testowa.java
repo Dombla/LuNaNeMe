@@ -1,5 +1,6 @@
-public class Klasa_Testowa {
-    public static int dodawanie(int a, int b){
-        return a+b+1;
+    public class Klasa_Testowa {
+        public static int dodawanie(int a, int b){
+
+            return a+b+2;
+        }
     }
-}
