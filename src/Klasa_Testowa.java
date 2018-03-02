@@ -3,4 +3,8 @@
             System.out.println("Jo jo :D");
             return a+b+3;
         }
+
+        public static void Text(){
+            System.out.println("No siema");
+        }
     }
