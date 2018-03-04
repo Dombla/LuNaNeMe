@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class ObsługaKlasyKonstruktor {
 
     //tworzę listę, która będzie przetrzymywać stworzone już obiekty
-    private List<Konstruktor> lista_obiektów = new ArrayList<>();
+    private List<Konstruktor> lista_obiektów = new ArrayList<Konstruktor>();
 
     public void DodajObiektBezParametrow (){
         //Pierwszy sposób tworzenia obiektu
@@ -22,7 +22,7 @@ public class ObsługaKlasyKonstruktor {
 
     public void DodajObiektZParametrami (String new_name){
         //Drugi sposób tworzenia obiektu
-        Konstruktor parametrowy = new Konstruktor(PodajIloscObiektow(), "Parametrowy");
+        Konstruktor parametrowy = new Konstruktor(PodajIloscObiektow(), new_name);
         //Wywołuję funkcję, zeby dodać nowy obiekt do listy
         DodajObiektDoListy(parametrowy);
     }
@@ -44,6 +44,28 @@ public class ObsługaKlasyKonstruktor {
         System.out.println("Tworzymy nowy obiekt klasy 'Konstruktor'");
         System.out.println("Proszę podać nazwę obiektu: ");
         String new_name = new Scanner(System.in).nextLine();
+
+        new_name = SprawdzUnikalnaNazwe(new_name);
+
+
+        DodajObiektZParametrami(new_name);
+        System.out.println("Gratuluję, utworzono nowy obiek o nazwe: " + new_name);
+    }
+
+    private String SprawdzUnikalnaNazwe(String nazwa){
+        int spr = 0;
+        while(spr != 1) {
+            for (Konstruktor x : lista_obiektów) {
+                if ((x.name).equals(nazwa)) {
+                    System.out.println("Już istnieje obiekt o takiej nazwie, podaj inny :");
+                    nazwa = new Scanner(System.in).nextLine();
+                    spr = 0;
+                } else {
+                    spr = 1;
+                }
+            }
+        }
+        return nazwa;
     }
 
     private void DodajObiektDoListy(Konstruktor nowy_obiekt){
@@ -66,6 +88,20 @@ public class ObsługaKlasyKonstruktor {
     public int PodajIloscObiektow(){
         //Wyswietla rozmiar listy - ilosc posiadanych elementów
         return lista_obiektów.size();
+    }
+
+    public void ZnajdzObiekt(String nazwa){
+        for(Konstruktor x : lista_obiektów)
+        {
+            if((x.name).equals(nazwa))
+            {
+                System.out.println("----------------------");
+                System.out.println("Znaleziono twój obiekt.");
+                System.out.println("Id: " + x.id);
+                System.out.println("Nazwa: "+ x.name);
+                System.out.println("----------------------");
+            }
+        }
     }
 
 }

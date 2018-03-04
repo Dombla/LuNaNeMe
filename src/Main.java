@@ -20,8 +20,14 @@ public class Main {
         //Spójrz na implementację funkcji 'DodajObiektTenSamCoInny' klasy ObsługaKlasyKonstruktor
         lista.DodajObiektTenSamCoInny();
 
+        //Tworze nowy obiekt jako uzytkownik
+        lista.DodajObiektJakoUzytkownik();
+
         //Wyswietlam wszystkie obecne stworzone obiekty
         lista.PokazWszystkieObiekty();
+
+        //Szukanie obiektu o danej nazwie:
+        lista.ZnajdzObiekt("Bezparametrowy");
 
         //Wyswietlam liczbę obiektów stworzonych
         System.out.println("Liczba obiektów: " + lista.PodajIloscObiektow());
