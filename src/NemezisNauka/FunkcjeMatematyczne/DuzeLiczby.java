@@ -19,7 +19,7 @@ public class DuzeLiczby {
     }
 
     private static BigDecimal dzielenie(BigDecimal a, BigDecimal b) {
-        return a.divide(b,20, RoundingMode.CEILING);
+        return a.divide(b,20, RoundingMode.HALF_UP);
     }
 
     public static void wyswietl() {
