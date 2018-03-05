@@ -14,6 +14,18 @@ public class FormatowanieWyswietlanychDanych {
         return String.format("%15s   %-15.2f %n", a, b);
     }
 
+    private static boolean porownajNiezaleznieOdWielkosciLiter(String a, String b) {
+        return a.equalsIgnoreCase(b);
+    }
+
+    private static void rozdzielenie(String a) {
+        String b[] = a.split(":");
+        for (String aB : b) {
+            System.out.print(aB + "  ");
+        }
+        System.out.println();
+    }
+
     public static void wyswietl(){
         String a = "Witam, witam";
         String b = "Żegnam, żegnam";
@@ -24,5 +36,7 @@ public class FormatowanieWyswietlanychDanych {
         tekstTekst(a,b);
         System.out.print(tekstLiczbaCalkowita(a,c));
         System.out.print(tekstLiczbaZmiennoprzecinkowa(b,d));
+        System.out.println(porownajNiezaleznieOdWielkosciLiter("Czesc","czesc"));
+        rozdzielenie("Ala:ma:kota");
     }
 }
