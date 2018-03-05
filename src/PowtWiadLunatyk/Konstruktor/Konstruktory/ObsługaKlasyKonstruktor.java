@@ -1,4 +1,4 @@
-package PowtWiadLunatyk.Konstruktor;
+package PowtWiadLunatyk.Konstruktor.Konstruktory;
 
 import java.util.ArrayList;
 import java.util.List;

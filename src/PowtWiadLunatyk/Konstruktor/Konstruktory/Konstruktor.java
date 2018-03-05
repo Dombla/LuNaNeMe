@@ -1,4 +1,4 @@
-package PowtWiadLunatyk.Konstruktor;
+package PowtWiadLunatyk.Konstruktor.Konstruktory;
 
 public class Konstruktor {
 
