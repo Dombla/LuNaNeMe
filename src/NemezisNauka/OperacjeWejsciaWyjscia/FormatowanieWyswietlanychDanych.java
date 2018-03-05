@@ -15,11 +15,13 @@ public class FormatowanieWyswietlanychDanych {
     }
 
     private static boolean porownajNiezaleznieOdWielkosciLiter(String a, String b) {
+        System.out.print("Funkcja equalsIgnoreCase:    ");
         return a.equalsIgnoreCase(b);
     }
 
     private static void rozdzielenie(String a) {
         String b[] = a.split(":");
+        System.out.print("Funkcja split:    ");
         for (String aB : b) {
             System.out.print(aB + "  ");
         }

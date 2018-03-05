@@ -34,6 +34,7 @@ public class PobieranieDanychScanner {
 
     public static void wyswietl() throws FileNotFoundException {
         System.out.println();
+        System.out.println("Pobieranie danych za pomocą Scennera");
         //pobierzOdUzytkownika();
         pobierzCiagZnakow();
         pobierzZPliku("Plik testowy.txt");
