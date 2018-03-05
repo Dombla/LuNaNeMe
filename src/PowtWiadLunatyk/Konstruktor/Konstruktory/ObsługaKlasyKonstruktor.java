@@ -29,6 +29,12 @@ public class ObsługaKlasyKonstruktor {
 
 
     public void DodajObiektTenSamCoInny (){
+
+        /*
+        * TODO
+        * W sumie nic do zrobienia ale dodane żeby sprawdzić działanie :P
+        */
+
         //Tworzę nowy obiekt o podanej nazwie
         Konstruktor pierwszy = new Konstruktor(PodajIloscObiektow(), "Duplikat");
         //Dodaję ten obiekt do listy, zeby był razem ze wszystkimi

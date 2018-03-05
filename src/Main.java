@@ -1,11 +1,12 @@
+import NemezisNauka.Wywolanie;
 import PowtWiadLunatyk.Konstruktor.Konstruktor_Scenariusz;
-import PowtWiadLunatyk.Konstruktor.Konstruktory.ObsługaKlasyKonstruktor;
 import PowtWiadLunatyk.Konstruktor.Plik;
+
 import java.io.*;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        System.out.println("Hello Word");
+        /*System.out.println("Hello Word");
         System.out.println("----------------------");
 
         //Powtórzenie wiadomości - Lunatykowiec
@@ -13,7 +14,10 @@ public class Main {
 
         Plik zabawa = new Plik("dupa.txt");
         zabawa.DodajDoPliku("cycki");
-        zabawa.Odczyt();
+        zabawa.Odczyt();*/
 
+
+        //Powtórzenie wiadomości - Nemezis
+        Wywolanie.wywolaj();
     }
 }
