@@ -14,7 +14,11 @@ public class PrzeciazenieKlas {
         return pom;
     }
 
-    public void dodajDoWywolywanej(PrzeciazenieKlas a){
+    public void dodajKlasy2(PrzeciazenieKlas a, PrzeciazenieKlas b) {
+        this.x = a.x + b.x;
+    }
+
+    public void dodajDoWywolywanej(PrzeciazenieKlas a) {
         this.x += a.x;
     }
 }
