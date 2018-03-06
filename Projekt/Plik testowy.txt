@@ -1,4 +1,0 @@
-123 456 789
-1.1 2.2 3.3
-aaa bbb ccc
-AAA BBB CCC

@@ -37,6 +37,6 @@ public class PobieranieDanychScanner {
         System.out.println("Pobieranie danych za pomocą Scennera");
         //pobierzOdUzytkownika();
         pobierzCiagZnakow();
-        pobierzZPliku("Plik testowy.txt");
+        pobierzZPliku("NemezisPliki\\Plik testowy.txt");
     }
 }

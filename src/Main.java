@@ -12,8 +12,8 @@ public class Main {
 
         //Powtórzenie wiadomości - Lunatykowiec
         //Konstruktor_Scenariusz example = new Konstruktor_Scenariusz();
-        Plik_Scenariusz example2 = new Plik_Scenariusz();
-        Kolekcje_Scenariusz example3 = new Kolekcje_Scenariusz();
+        //Plik_Scenariusz example2 = new Plik_Scenariusz();
+        //Kolekcje_Scenariusz example3 = new Kolekcje_Scenariusz();
 
 
 

@@ -28,7 +28,7 @@ public class Pliki {
     }
 
     public static void wykonaj() throws IOException {
-        String name = "Plik testowy.txt";
+        String name = "NemezisPliki\\Plik testowy.txt";
         tworzenie(name);
         zapis(name);
         System.out.println("\nWyświetlenie zawartości pliku:");
