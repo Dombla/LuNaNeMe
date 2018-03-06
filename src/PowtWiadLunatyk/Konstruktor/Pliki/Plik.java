@@ -1,4 +1,4 @@
-package PowtWiadLunatyk.Konstruktor;
+package PowtWiadLunatyk.Konstruktor.Pliki;
 
 import java.io.File;
 import java.io.FileReader;
