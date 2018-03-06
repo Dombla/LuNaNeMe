@@ -35,11 +35,20 @@ public class BinarnyZapisIOdczytPlikow {
         }
     }
 
-    private static void odczytIntow(String name) throws IOException {
-        FileInputStream plik = new FileInputStream(name);
-        DataInputStream odczyt = new DataInputStream(plik);
-        int a;
-        while ((a = odczyt.read()) != -1) {
+    private static void uzycieJednegoPliku(String name) throws IOException {
+        RandomAccessFile plik = new RandomAccessFile(name,"r");
+        String a;
+        while((a=plik.readLine())!=null){
+            System.out.println(a);
+        }
+        plik.close();
+    }
+
+    private static void odczytStringow(String name) throws IOException {
+        FileReader plik = new FileReader(name);
+        BufferedReader odczyt = new BufferedReader(plik);
+        String a;
+        while ((a = odczyt.readLine()) != null) {
             System.out.println(a);
         }
         odczyt.close();
@@ -48,11 +57,12 @@ public class BinarnyZapisIOdczytPlikow {
     public static void wykonaj() throws IOException {
         String nazwa = "NemezisPliki\\Operacje binarne.txt";
         int[] a = {11110000, 11001100, 10101010};
-        String[] b = {"Jeden", "Dwa", "Trzy"};
+        String[] b = {"Jeden\n", "Dwa", "Trzy"};
 
         System.out.println("Operacje binarne:");
         zapisIntow(nazwa, a);
-        odczytIntow(nazwa);
         zapisStringow(nazwa, b);
+        odczytStringow(nazwa);
+        uzycieJednegoPliku(nazwa);
     }
 }
