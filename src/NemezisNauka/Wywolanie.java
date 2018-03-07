@@ -35,8 +35,9 @@ public class Wywolanie {
         System.out.println(klasa3.x);
 
         Konstruktory klasa5 = new Konstruktory(2, "xxx");
-        System.out.printf("%n%s%n%d  %s%n", "Konstruktory:", klasa5.a, klasa5.b);
+        System.out.printf("%n%s%n%d  %s%n%n", "Konstruktory:", klasa5.a, klasa5.b);
 
+        System.out.println("Dziedziczenie:");
         PojazdDziedziczenie1 pojazd = new PojazdDziedziczenie1(25500.00,1200,280);
         System.out.println(pojazd.toString());
         DwusladowyDziedziczenie2 pojazd2 = new DwusladowyDziedziczenie2(3000.00, 730, 220, 5, "EngineV2");
