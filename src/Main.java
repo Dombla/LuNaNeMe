@@ -1,7 +1,4 @@
 import NemezisNauka.Wywolanie;
-import PowtWiadLunatyk.Konstruktor.Kolekcje_Scenariusz;
-import PowtWiadLunatyk.Konstruktor.Konstruktor_Scenariusz;
-import PowtWiadLunatyk.Konstruktor.Plik_Scenariusz;
 
 import java.io.*;
 

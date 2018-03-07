@@ -2,9 +2,7 @@ package NemezisNauka;
 
 import NemezisNauka.FunkcjeMatematyczne.DuzeLiczby;
 import NemezisNauka.FunkcjeMatematyczne.PodstawoweFunckjeMatematyczne;
-import NemezisNauka.Klasy.Konstruktory;
-import NemezisNauka.Klasy.PrzeciazenieKlas;
-import NemezisNauka.Klasy.PrzeciazenieMetod;
+import NemezisNauka.Klasy.*;
 import NemezisNauka.OperacjeWejsciaWyjscia.BinarnyZapisIOdczytPlikow;
 import NemezisNauka.OperacjeWejsciaWyjscia.FormatowanieWyswietlanychDanych;
 import NemezisNauka.OperacjeWejsciaWyjscia.Pliki;
@@ -38,6 +36,15 @@ public class Wywolanie {
 
         Konstruktory klasa5 = new Konstruktory(2, "xxx");
         System.out.printf("%n%s%n%d  %s%n", "Konstruktory:", klasa5.a, klasa5.b);
+
+        PojazdDziedziczenie1 pojazd = new PojazdDziedziczenie1(25500.00,1200,280);
+        System.out.println(pojazd.toString());
+        DwusladowyDziedziczenie2 pojazd2 = new DwusladowyDziedziczenie2(3000.00, 730, 220, 5, "EngineV2");
+        System.out.println(pojazd2.toString());
+        DwusladowyDziedziczenie2 pojazd3 = new DwusladowyDziedziczenie2(pojazd, 2, "EngineV6");
+        System.out.println(pojazd3.toString());
+        CiezarowyDziedziczenie3 pojazd4 = new CiezarowyDziedziczenie3(pojazd3, 4000);
+        System.out.println(pojazd4.toString());
 
     }
 }
