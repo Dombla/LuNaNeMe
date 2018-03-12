@@ -9,7 +9,7 @@ public class CiezarowyDziedziczenie3 extends DwusladowyDziedziczenie2 {
     }
 
     public CiezarowyDziedziczenie3(double a, int b, int c, int d, String e, int f) {
-        super(a,b,c,d,e);
+        super(a, b, c, d, e);
         maxLadunek = f;
     }
 

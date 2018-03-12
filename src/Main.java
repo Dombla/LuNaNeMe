@@ -1,4 +1,7 @@
 import NemezisNauka.Wywolanie;
+import PowtWiadLunatyk.Konstruktor.Kolekcje_Scenariusz;
+import PowtWiadLunatyk.Konstruktor.Konstruktor_Scenariusz;
+import PowtWiadLunatyk.Konstruktor.Plik_Scenariusz;
 
 import java.io.*;
 
@@ -11,7 +14,6 @@ public class Main {
         //Konstruktor_Scenariusz example = new Konstruktor_Scenariusz();
         //Plik_Scenariusz example2 = new Plik_Scenariusz();
         //Kolekcje_Scenariusz example3 = new Kolekcje_Scenariusz();
-
 
 
         //Powtórzenie wiadomości - Nemezis

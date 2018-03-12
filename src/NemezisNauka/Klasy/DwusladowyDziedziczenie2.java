@@ -11,7 +11,7 @@ public class DwusladowyDziedziczenie2 extends PojazdDziedziczenie1 {
     }
 
     public DwusladowyDziedziczenie2(double a, int b, int c, int d, String e) {
-        super(a,b,c);
+        super(a, b, c);
         this.maxPasazerow = d;
         this.silnik = e;
     }

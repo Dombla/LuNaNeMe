@@ -2,6 +2,8 @@ package NemezisNauka;
 
 import NemezisNauka.FunkcjeMatematyczne.DuzeLiczby;
 import NemezisNauka.FunkcjeMatematyczne.PodstawoweFunckjeMatematyczne;
+import NemezisNauka.Interfejsy.Inter;
+import NemezisNauka.Interfejsy.Rosliny;
 import NemezisNauka.Klasy.*;
 import NemezisNauka.OperacjeWejsciaWyjscia.BinarnyZapisIOdczytPlikow;
 import NemezisNauka.OperacjeWejsciaWyjscia.FormatowanieWyswietlanychDanych;
@@ -9,6 +11,8 @@ import NemezisNauka.OperacjeWejsciaWyjscia.Pliki;
 import NemezisNauka.OperacjeWejsciaWyjscia.PobieranieDanychScanner;
 
 import java.io.IOException;
+import java.lang.reflect.Array;
+import java.util.Arrays;
 
 public class Wywolanie {
     public static void wywolaj() throws IOException {
@@ -38,7 +42,7 @@ public class Wywolanie {
         System.out.printf("%n%s%n%d  %s%n%n", "Konstruktory:", klasa5.a, klasa5.b);
 
         System.out.println("Dziedziczenie:");
-        PojazdDziedziczenie1 pojazd = new PojazdDziedziczenie1(25500.00,1200,280);
+        PojazdDziedziczenie1 pojazd = new PojazdDziedziczenie1(25500.00, 1200, 280);
         System.out.println(pojazd.toString());
         DwusladowyDziedziczenie2 pojazd2 = new DwusladowyDziedziczenie2(3000.00, 730, 220, 5, "EngineV2");
         System.out.println(pojazd2.toString());
@@ -47,5 +51,12 @@ public class Wywolanie {
         CiezarowyDziedziczenie3 pojazd4 = new CiezarowyDziedziczenie3(pojazd3, 4000);
         System.out.println(pojazd4.toString());
 
+        System.out.println("\nInterfejsy:");
+        System.out.println(Rosliny.komunikat);
+        Rosliny rosliny = new Inter();
+        rosliny.wiadomosc();
+        System.out.println(rosliny.lisciasteIglaste("sosna"));
+        System.out.println(rosliny.lisciasteIglaste("dąb"));
+        System.out.println(Arrays.toString(rosliny.witaminy()));
     }
 }

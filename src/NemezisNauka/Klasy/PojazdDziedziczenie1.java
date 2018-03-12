@@ -27,5 +27,4 @@ public class PojazdDziedziczenie1 {
     public String toString() {
         return "Cena: " + this.cena + "    Waga: " + this.waga + "    Prędkość maksymalna: " + this.maxPredkosc;
     }
-
 }
