@@ -5,13 +5,15 @@ import NemezisNauka.FunkcjeMatematyczne.PodstawoweFunckjeMatematyczne;
 import NemezisNauka.Interfejsy.Inter;
 import NemezisNauka.Interfejsy.Rosliny;
 import NemezisNauka.Klasy.*;
+import NemezisNauka.Kolekcje.Kolejka;
+import NemezisNauka.Kolekcje.KolejkaPlusStos;
+import NemezisNauka.Kolekcje.Stos;
 import NemezisNauka.OperacjeWejsciaWyjscia.BinarnyZapisIOdczytPlikow;
 import NemezisNauka.OperacjeWejsciaWyjscia.FormatowanieWyswietlanychDanych;
 import NemezisNauka.OperacjeWejsciaWyjscia.Pliki;
 import NemezisNauka.OperacjeWejsciaWyjscia.PobieranieDanychScanner;
 
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Wywolanie {
@@ -55,8 +57,17 @@ public class Wywolanie {
         System.out.println(Rosliny.komunikat);
         Rosliny rosliny = new Inter();
         rosliny.wiadomosc();
-        System.out.println(rosliny.lisciasteIglaste("sosna"));
         System.out.println(rosliny.lisciasteIglaste("dąb"));
+        System.out.println(rosliny.lisciasteIglaste("sosna"));
         System.out.println(Arrays.toString(rosliny.witaminy()));
+
+        System.out.println("\nStos:");
+        Stos.wyswietl();
+
+        System.out.println("\nKolejka:");
+        Kolejka.wyswietl();
+
+        System.out.println("\nDeque: połączenie kolejki i stosu - zalecane");
+        KolejkaPlusStos.wyswietl();
     }
 }

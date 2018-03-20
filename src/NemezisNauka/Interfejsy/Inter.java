@@ -3,6 +3,10 @@ package NemezisNauka.Interfejsy;
 public class Inter implements Rosliny {
     public int ileLisci;
 
+    public void wiek() {
+        System.out.println("Drzewa żyją setki lat");
+    }
+
     @Override
     public boolean lisciasteIglaste(String nazwa) {
         return !nazwa.equals("sosna") && !nazwa.equals("świerk");
@@ -19,7 +23,8 @@ public class Inter implements Rosliny {
         return wit;
     }
 
-    public void wiek() {
-        System.out.println("Drzewa żyją setki lat");
+    @Override
+    public void wiadomosc() {
+        System.out.println("Nie każda roślina potrzebuje słońca");
     }
 }
